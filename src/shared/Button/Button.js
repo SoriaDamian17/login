@@ -6,17 +6,12 @@ import './Button.scss';
 const Button = (props) => {
 
     const type = props.outline ? 'outline--' : 'button--';
-    const styleClass = 'button '+ type + props.variant;
-
-    function handleClick() {
-        if (props.href) {
-            window.location.href = props.href;
-        }
-    }
+    let styleClass = 'button '+ type + props.color;
+    styleClass += props.fullWidth ? ' button--block' : '';
 
     return (
-        <button type={props.type} className={styleClass} onClick={() => handleClick()}>
-            {props.title}
+        <button type={props.type} className={styleClass} onClick={props.handleClick}>
+            {props.children}
         </button>
     )
 }
