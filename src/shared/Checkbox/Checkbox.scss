@@ -1,0 +1,9 @@
+.ui-control-checkbox {
+    display: inline;
+
+    input {
+        &:checked {
+            color: #3f51b5;
+        }
+    }
+}
