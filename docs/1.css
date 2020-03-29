@@ -1,0 +1,12 @@
+.layout main{height:100vh}.layout .bg-main{background-size:cover;background-color:#fafafa;background-image:url("https://source.unsplash.com/random");background-repeat:no-repeat;background-position:center}
+
+.button{display:inline-block;margin:0.5rem 0;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.button--block{display:block;width:100%}.button--primary{color:#fff;background-color:#007bff;border-color:#007bff}.button--primary:hover{color:#fff;background-color:#0069d9;border-color:#0062cc}.outline--primary{color:#007bff;border-color:#007bff}.outline--primary:hover{color:#fff;background-color:#007bff;border-color:#007bff}
+
+.ui-control-textfield{position:relative}.ui-control-textfield label{color:#c6c6c6;font-size:16px;font-weight:normal;position:absolute;background:#FFF;padding:5px;pointer-events:none;left:5px;top:10px;-webkit-transition:300ms ease all;transition:300ms ease all}.ui-control-textfield input{background:none;color:#c6c6c6;font-size:18px;padding:18.5px 14px;display:block;width:100%;border:1px solid #ced4da;border-radius:.25rem;box-sizing:border-box;animation-name:mui-auto-fill-cancel;-webkit-tap-highlight-color:transparent}.ui-control-textfield input:focus{color:#495057;background-color:#fff;border-color:#80bdff;outline:0;box-shadow:0 0 0 0.2rem rgba(0,123,255,0.25)}.ui-control-textfield input:focus ~ label,.ui-control-textfield input:valid ~ label{top:-14px;font-size:12px;color:#2196F3}
+
+.ui-control-label{padding:0.5rem 0}.ui-control-label span{font-size:1rem;font-weight:400;line-height:1.5;letter-spacing:0.00938em}
+
+.ui-control-checkbox{display:inline}.ui-control-checkbox input:checked{color:#3f51b5}
+
+.main-container{margin:0 !important}
+

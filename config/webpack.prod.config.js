@@ -12,7 +12,7 @@ module.exports = (env) => {
         mode: 'production',
         output: {
             filename: 'js/app.bundle.js',
-            publicPath: '/'
+            path: path.resolve(__dirname, '../docs'),
         },
         optimization: {
             splitChunks: {
