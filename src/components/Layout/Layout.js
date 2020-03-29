@@ -1,4 +1,7 @@
 import React, {useEffect} from 'react';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+
 import './Layout.scss';
 
 const Layout = (props) => {
@@ -9,7 +12,10 @@ const Layout = (props) => {
 
     return (
         <div className="layout">
-            {props.children}
+            <Grid container component="main">
+                <Grid item xs={false} sm={4} md={7} className='bg-main' />
+                {props.children}
+            </Grid>
         </div>
     )
 }

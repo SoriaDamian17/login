@@ -1,5 +1,6 @@
 .button {
     display: inline-block;
+    margin: 0.5rem 0;
     font-weight: 400;
     color: #212529;
     text-align: center;
@@ -16,6 +17,11 @@
     line-height: 1.5;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    &--block {
+        display: block;
+        width: 100%;
+    }
 
     &--primary {
         color: #fff;
