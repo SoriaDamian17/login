@@ -3,7 +3,6 @@ import { Link } from '@reach/router';
 import Layout from '../components/Layout';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '../shared/Button';
-// import TextField from '@material-ui/core/TextField';
 import TextField from '../shared/TextField';
 import Label from '../shared/Label';
 import Checkbox from '../shared/Checkbox';
@@ -29,9 +28,6 @@ const useStyles = makeStyles((theme) => ({
     width: '100%', // Fix IE 11 issue.
     marginTop: theme.spacing(1),
     },
-    submit: {
-    margin: theme.spacing(3, 0, 2),
-    },
 }));
 
 export default () => {
@@ -47,14 +43,13 @@ export default () => {
                     <h1>
                     Sign in
                     </h1>
-                    <form className={classes.form} noValidate>
+                    <form className="form-control" noValidate>
                     <Grid container spacing={2}>
                         <Grid item xs={12}>
                             <TextField
                                 variant="outlined"
                                 margin="normal"
                                 required
-                                fullWidth
                                 id="email"
                                 label="Email Address"
                                 name="email"
@@ -67,7 +62,6 @@ export default () => {
                                 variant="outlined"
                                 margin="normal"
                                 required
-                                fullWidth
                                 name="password"
                                 label="Password"
                                 type="password"
@@ -82,9 +76,9 @@ export default () => {
                     />
                     <Button
                         type="submit"
-                        fullWidth
                         variant="contained"
                         color="primary"
+                        fullWidth
                     >
                         Sign In
                     </Button>

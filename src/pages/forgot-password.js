@@ -3,13 +3,11 @@ import { Link } from '@reach/router';
 import Layout from '../components/Layout';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '../shared/Button';
-// import TextField from '@material-ui/core/TextField';
 import TextField from '../shared/TextField';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import { makeStyles } from '@material-ui/core/styles';
-
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -26,9 +24,6 @@ const useStyles = makeStyles((theme) => ({
     width: '100%', // Fix IE 11 issue.
     marginTop: theme.spacing(1),
     },
-    submit: {
-    margin: theme.spacing(3, 0, 2),
-    },
 }));
 
 export default () => {
@@ -44,14 +39,13 @@ export default () => {
                     <h1>
                     Forgot Password
                     </h1>
-                    <form className={classes.form} noValidate>
+                    <form className="form-control" noValidate>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={12}>
                             <TextField
                                 variant="outlined"
                                 margin="normal"
                                 required
-                                fullWidth
                                 id="email"
                                 label="Email Address"
                                 name="email"
@@ -62,10 +56,9 @@ export default () => {
                         <Grid item xs={12} sm={12}>
                             <Button
                                 type="submit"
-                                fullWidth
                                 variant="contained"
                                 color="primary"
-                                className={classes.submit}
+                                fullWidth
                             >
                                 Submit
                             </Button>

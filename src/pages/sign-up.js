@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '../shared/Button';
-// import TextField from '@material-ui/core/TextField';
 import TextField from '../shared/TextField';
 import Paper from '@material-ui/core/Paper';
 import Label from '../shared/Label';
@@ -23,13 +22,6 @@ const useStyles = makeStyles((theme) => ({
   margin: theme.spacing(1),
   backgroundColor: theme.palette.secondary.main,
   },
-  form: {
-  width: '100%', // Fix IE 11 issue.
-  marginTop: theme.spacing(1),
-  },
-  submit: {
-  margin: theme.spacing(3, 0, 2),
-  },
 }));
 
 export default function SignUp() {
@@ -45,7 +37,7 @@ export default function SignUp() {
             <h1>
               Sign up
             </h1>
-            <form className={classes.form} noValidate>
+            <form className="form-control" noValidate>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                   <TextField
@@ -53,7 +45,6 @@ export default function SignUp() {
                     name="firstName"
                     variant="outlined"
                     required
-                    fullWidth
                     id="firstName"
                     label="First Name"
                     autoFocus
@@ -63,7 +54,6 @@ export default function SignUp() {
                   <TextField
                     variant="outlined"
                     required
-                    fullWidth
                     id="lastName"
                     label="Last Name"
                     name="lastName"
@@ -74,7 +64,6 @@ export default function SignUp() {
                   <TextField
                     variant="outlined"
                     required
-                    fullWidth
                     id="email"
                     label="Email Address"
                     name="email"
@@ -85,7 +74,6 @@ export default function SignUp() {
                   <TextField
                     variant="outlined"
                     required
-                    fullWidth
                     name="password"
                     label="Password"
                     type="password"
@@ -105,7 +93,6 @@ export default function SignUp() {
                 fullWidth
                 variant="contained"
                 color="primary"
-                className={classes.submit}
               >
                 Sign Up
               </Button>

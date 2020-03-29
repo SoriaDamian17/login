@@ -4,9 +4,9 @@ import './TextField.scss';
 
 const TextField = (props) => {
     return (
-        <div class="ui-control-textfield">
+        <div className="ui-control-textfield">
             <input {...props} />
-            <label for={props.id}>{props.label} {props.required && <sub>*</sub>}</label>
+            <label>{props.label} {props.required && <sub>*</sub>}</label>
         </div>
     )
 }
