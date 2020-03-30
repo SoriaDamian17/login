@@ -2,3 +2,4 @@
 /dist
 /dll
 package-lock.json
+.now
