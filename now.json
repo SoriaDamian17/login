@@ -1,10 +1,12 @@
 {
     "version": 2,
-    "name": "login-damian",
     "builds": [
         { "use": "@now/static-build", "src": "package.json"}
     ],
     "routes": [
+        {
+            "src": "(.*).css", "dest": "/$1.css"
+        },
         {
             "src": "(.*).js", "dest": "/$1.js"
         },
